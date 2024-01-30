@@ -42,16 +42,16 @@ def get_color_range(color):
 def detect_color(img, lower_range, upper_range):
 
     # Perform a Gaussian filter 
-    # cv.GaussianBlur(img,(5,5),0)
+    iamge_gauss = cv2.GaussianBlur(img,(5,5),0)
 
     # Convert gauss image to HSV
-    # <COMPLETE>
+    hsv_image = cv2.cvtColour(..., cv2, )
 
     # Get color mask
-    # <COMPLETE>
+    mask = cv2.inRange()
 
     # Define rectangular kernel 25x25
-    # <COMPLETE>
+    kernel = cv2.getStructuringElement(rectangular,(25,25))
 
     # Apply openning to mask 
     # <COMPLETE>
